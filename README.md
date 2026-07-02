@@ -143,19 +143,27 @@ It commits public withdraw data into the journal:
     - withdraw amount
     - output leaf for change
 
-## Deployed image IDs
+## Image IDs
 
-The current deployed Stellar Mixer image IDs are:
+The current image IDs produced by this repository are:
 
-    transfer image id:
-      df81b36b05b68434b9f3c78ab3eb10d12eee3fb9bdda54d77681f7055a2f0b44
+    transfer image id words:
+      [498159648, 2938926520, 1961483861, 318186971, 124339936, 981829501, 2383877649, 2412115495]
 
-    withdraw image id:
-      1d48517b74b17df6edfc93591254f8a9194023018753e74cb397a172739d0a86
+    transfer image id hex le-words:
+      2050b11db8752caf55dee974db25f712e04669077d87853a1116178e27f6c58f
 
-These are little-endian word encoded hex values, matching how the host helper prints image IDs.
+    withdraw image id words:
+      [58232140, 1509054718, 113098096, 1232102061, 150807468, 3067204521, 460803923, 1733823451]
+
+    withdraw image id hex le-words:
+      4c8d7803fe58f25970bdbd06ad627049ac23fd08a9d3d1b6534f771bdb0b5867
+
+These hex values are little-endian word encoded values, matching how the host helper prints image IDs.
 
 The user should compare locally generated values against the image IDs used by the mixer contract.
+
+If the deployed mixer contract contains different image IDs, then this repository does not reproduce that deployed contract version.
 
 ## Requirements
 
