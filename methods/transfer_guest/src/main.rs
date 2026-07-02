@@ -35,6 +35,7 @@ struct TransferJournal {
     output_leaves: Vec<[u8; 32]>,
 }
 
+#[allow(dead_code)]
 #[derive(Clone, Encode)]
 struct TransferPublicOutputs {
     root: [u8; 32],
