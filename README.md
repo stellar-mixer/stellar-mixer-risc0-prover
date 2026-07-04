@@ -273,8 +273,8 @@ Print the generated image IDs:
 
 Expected values:
 
-    df81b36b05b68434b9f3c78ab3eb10d12eee3fb9bdda54d77681f7055a2f0b44
-    1d48517b74b17df6edfc93591254f8a9194023018753e74cb397a172739d0a86
+    2050b11db8752caf55dee974db25f712e04669077d87853a1116178e27f6c58f
+    4c8d7803fe58f25970bdbd06ad627049ac23fd08a9d3d1b6534f771bdb0b5867
 
 If the generated values match the contract values, the local build reproduced the guest image IDs.
 
